@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- [Preview site](https://your-solution-url.com)
-- [Preview solution on Frontend Mentor](https://your-live-site-url.com)
+- [Preview site](https://alberto-rj.github.io/calculator-app/)
+- [Preview solution on Frontend Mentor](https://www.frontendmentor.io/solutions/animated-calculator-app-with-theme-switcher-PQ6boBxnTW)
 
 ## My process
 
