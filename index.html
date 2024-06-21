@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Calculator app</title>
+  <meta name="title" content="Frontend Mentor | Calculator app" />
+  <meta 
+    name="description" 
+    content="This is a Alberto Raúl José's solution to the Calculator app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects." 
+  />
+  <meta name="author" content="Alberto Raúl José" />
+  
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="style.min.css" />
+
+  <!-- script -->
+  <script src="./toggle.js" defer></script>
+  <script src="./theme.js" defer></script>
+  <script src="./toast.js" defer></script>
+  <script src="./expression.js" defer></script>
+  <script src="./app.js" defer></script>
+  
+</head>
+<body>
+  <div role="alertdialog" class="toast" tabindex="-1">
+    <button aria-label="Close" class="toast__close">&times;</button>
+    <p class="toast__content"></p>
+  </div>
+  <main class="main">
+    <div class="content">
+      <div class="header">
+        <h1 class="heading">
+          <span class="sr-only">Basic calculator</span>
+          <span aria-hidden="true">Calc</span>
+        </h1>
+        <div class="toggle" tabindex="-1">
+          <label class="toggle__label">Theme</label>
+          <div class="toggle__group">
+            <div class="toggle__items">
+              <span class="toggle__item-1" data-value="1">1</span>
+              <span class="toggle__item-2" data-value="2">2</span>
+              <span class="toggle__item-3" data-value="3">3</span>
+            </div>
+            <div class="toggle__slide" tabindex="0" data-value="1">
+              <div class="toggle__control"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="screen">
+        <span class="screen__content"></span>
+      </div>
+
+      <div class="keypad">
+        <button id="key-7" class="key" value="7">7</button>
+        <button id="key-8" class="key" value="8">8</button>
+        <button id="key-9" class="key" value="9">9</button>
+        <button id="key-delete" class="key key--secondary" aria-label="Backspace">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+            <line x1="18" y1="9" x2="12" y2="15"></line>
+            <line x1="12" y1="9" x2="18" y2="15"></line>
+          </svg>
+        </button>
+        <button id="key-4" class="key" value="4">4</button>
+        <button id="key-5" class="key" value="5">5</button>
+        <button id="key-6" class="key" value="6">6</button>
+        <button id="key-plus" class="key" value="+">&plus;</button>
+        <button id="key-1" class="key" value="1">1</button>
+        <button id="key-2" class="key" value="2">2</button>
+        <button id="key-3" class="key" value="3">3</button>
+        <button id="key-minus" class="key" aria-label="Minus" value="-">&minus;</button>
+        <button id="key-dot" class="key" aria-label="Dot" value=".">.</button>
+        <button id="key-0" class="key" value="0">0</button>
+        <button id="key-divide" class="key" aria-label="Divide" value="/">&divide;</button>
+        <button id="key-times" class="key" aria-label="Times" value="*">&times;</button>
+        <button id="key-reset" class="key key--secondary" aria-label="Reset">&#1017;</button>
+        <button id="key-equal" class="key key--primary" aria-label="Equal">&equals;</button>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/alberto-rj" target="_blank">Alberto Raúl José</a>.
+    </p>
+  </footer>
+</body>
+</html>
