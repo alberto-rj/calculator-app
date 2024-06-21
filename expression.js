@@ -143,7 +143,7 @@ class Expression  {
   }
 
   copy (other) {
-    
+    console.log('other:', other);
     if (!other) {
       this.reset();
       return;
