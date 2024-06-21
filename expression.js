@@ -160,7 +160,6 @@ class Expression  {
   }
 
   prioritize () {
-    // 5.2 * 3 - 8 / 2.21 + 1.5 * 4
     let size = this.map.size;
     let firstKey = 0;
     while (firstKey < size - 2) {
