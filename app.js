@@ -89,7 +89,7 @@ const transitionKeyHandler = (event) => {
 
 const keyFocusHandler = (event) => {
   event.target.blur();
-}
+};
 
 const keydownHandler = (event) => {
   let key = event.key;
