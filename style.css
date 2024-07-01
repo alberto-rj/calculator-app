@@ -518,6 +518,12 @@ body {
 .toggle__slide:focus .toggle__control {
   background: var(--theme-primary-active);
 }
+@media (prefers-color-scheme: light) {
+  .toggle__slide .toggle__control {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }   
+}
 .toggle__slide--1 .toggle__control {
   left: 0.5rem;
   transform: translate(0, -50%);
@@ -529,12 +535,6 @@ body {
 .toggle__slide--3 .toggle__control {
   left: calc(100% - 1.125rem - 0.5rem);
   transform: translate(0, -50%);
-}
-@media (prefers-color-scheme: light) {
-  .toggle__slide .toggle__control {
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }   
 }
 /* header end */
 
